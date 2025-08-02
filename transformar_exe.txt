@@ -1,0 +1,28 @@
+✅ ETAPA 1 — Instalar o PyInstaller
+
+Você só precisa fazer isso uma vez:
+Abra o Prompt de Comando (CMD).
+Digite:
+pip install pyinstaller
+
+✅ ETAPA 2 — Criar o Executável
+Supondo que seu script se chama monitor_ping.py, vá até a pasta onde ele está e digite:
+pyinstaller --onefile monitor_ping.py
+Explicando:
+
+--onefile: cria um único .exe, compacto e prático.
+
+✅ ETAPA 3 — Onde está o .exe?
+
+Após o processo:
+Vá até a subpasta dist que o PyInstaller criou.
+Lá dentro estará o arquivo monitor_ping.exe.
+Você pode:
+Copiar esse .exe para qualquer lugar.
+Executar com duplo clique.
+Ele vai gerar e atualizar o ping_log.txt no mesmo local do .exe.
+
+✅ OPCIONAL — Tirar a janela preta (modo invisível)
+Se você quiser que o programa não abra o console (roda "escondido"), mude o comando para:
+
+pyinstaller --onefile --noconsole monitor_ping.py
